@@ -1,0 +1,67 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 04, 2022 at 09:41 AM
+-- Server version: 10.9.2-MariaDB-log
+-- PHP Version: 8.0.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `DATA`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `BSIT3S`
+--
+
+CREATE TABLE `BSIT3S` (
+  `SEQ_NO` varchar(40) NOT NULL DEFAULT '0',
+  `ID_NUMBER` varchar(40) NOT NULL DEFAULT '0000-0000',
+  `LASTNAME` varchar(25) NOT NULL DEFAULT '',
+  `FIRSTNAME` varchar(25) NOT NULL DEFAULT '',
+  `MIDDLENAME` varchar(25) NOT NULL DEFAULT '',
+  `COURSE` varchar(5) NOT NULL DEFAULT '',
+  `YEAR` varchar(5) NOT NULL DEFAULT '',
+  `GENDER` varchar(5) NOT NULL DEFAULT '',
+  `BIRTHDATE` date NOT NULL DEFAULT '0000-00-00',
+  `MUNICIPALITY` varchar(15) NOT NULL DEFAULT '',
+  `BARANGAY` varchar(15) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `BSIT3S`
+--
+
+INSERT INTO `BSIT3S` (`SEQ_NO`, `ID_NUMBER`, `LASTNAME`, `FIRSTNAME`, `MIDDLENAME`, `COURSE`, `YEAR`, `GENDER`, `BIRTHDATE`, `MUNICIPALITY`, `BARANGAY`) VALUES
+('1', '2020-0665', 'BATUHAN', 'JUNMAR', 'APAWAN', 'BSIT', '3rd', 'Male', '2001-03-05', 'MADRIDEJOS', 'POBLACION'),
+('2', '2020-0647', 'BENIGNOS', 'ERICO', 'FLORES', 'BSIT', '3rd', 'Male', '2001-09-27', 'BANTAYAN', 'HILOTONGAN'),
+('3', '2020-0728', 'BUHAYAN', 'JADE NELSON', 'NEGRE', 'BSIT', '3rd', 'Male', '2001-08-08', 'MADRIDEJOS', 'TARONG'),
+('4', '2020-0724', 'DESTRIZA', 'MATHEW DAVID', 'LAYOS', 'BSIT', '3rd', 'Male', '2001-08-08', 'BANTAYAN', 'SUBA');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `BSIT3S`
+--
+ALTER TABLE `BSIT3S`
+  ADD PRIMARY KEY (`SEQ_NO`,`ID_NUMBER`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
