@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 11, 2022 at 10:58 AM
--- Server version: 10.9.2-MariaDB-log
--- PHP Version: 8.0.6
+-- Host: localhost
+-- Generation Time: Oct 17, 2022 at 07:43 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,67 +24,78 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `0rders`
+-- Table structure for table `Aquintance_Party`
 --
 
-CREATE TABLE `0rders` (
-  `ord_no` decimal(5,0) NOT NULL DEFAULT 0,
-  `purch_amt` decimal(8,2) NOT NULL DEFAULT 0.00,
-  `ord_date` date NOT NULL DEFAULT '0000-00-00',
-  `customer_id` decimal(5,0) NOT NULL DEFAULT 0,
-  `salesman_id` decimal(5,0) NOT NULL DEFAULT 0
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `0rders`
---
-
-INSERT INTO `0rders` (`ord_no`, `purch_amt`, `ord_date`, `customer_id`, `salesman_id`) VALUES
-('245', '123.00', '2002-01-22', '253', '1234');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `BSIT3S`
---
-
-CREATE TABLE `BSIT3S` (
-  `SEQ_NO` varchar(40) NOT NULL DEFAULT '0',
-  `ID_NUMBER` varchar(40) NOT NULL DEFAULT '0000-0000',
-  `LASTNAME` varchar(25) NOT NULL DEFAULT '',
-  `FIRSTNAME` varchar(25) NOT NULL DEFAULT '',
-  `MIDDLENAME` varchar(25) NOT NULL DEFAULT '',
-  `COURSE` varchar(5) NOT NULL DEFAULT '',
-  `YEAR` varchar(5) NOT NULL DEFAULT '',
-  `GENDER` varchar(5) NOT NULL DEFAULT '',
-  `BIRTHDATE` date NOT NULL DEFAULT '0000-00-00',
-  `MUNICIPALITY` varchar(15) NOT NULL DEFAULT '',
-  `BARANGAY` varchar(15) NOT NULL DEFAULT ''
+CREATE TABLE `Aquintance_Party` (
+  `ID` int(11) NOT NULL DEFAULT 0,
+  `Name` varchar(50) NOT NULL DEFAULT '',
+  `Status` varchar(10) NOT NULL DEFAULT '',
+  `Sex` varchar(7) NOT NULL DEFAULT '',
+  `Course` varchar(10) NOT NULL DEFAULT '',
+  `Year` varchar(5) NOT NULL DEFAULT '',
+  `Section` varchar(10) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `BSIT3S`
+-- Dumping data for table `Aquintance_Party`
 --
 
-INSERT INTO `BSIT3S` (`SEQ_NO`, `ID_NUMBER`, `LASTNAME`, `FIRSTNAME`, `MIDDLENAME`, `COURSE`, `YEAR`, `GENDER`, `BIRTHDATE`, `MUNICIPALITY`, `BARANGAY`) VALUES
-('1', '2020-0665', 'BATUHAN', 'JUNMAR', 'APAWAN', 'BSIT', '3rd', 'Male', '2001-03-05', 'MADRIDEJOS', 'POBLACION'),
-('2', '2020-0647', 'BENIGNOS', 'ERICO', 'FLORES', 'BSIT', '3rd', 'Male', '2001-09-27', 'BANTAYAN', 'HILOTONGAN'),
-('3', '2020-0728', 'BUHAYAN', 'JADE NELSON', 'NEGRE', 'BSIT', '3rd', 'Male', '2001-08-08', 'MADRIDEJOS', 'TARONG'),
-('4', '2020-0724', 'DESTRIZA', 'MATHEW DAVID', 'LAYOS', 'BSIT', '3rd', 'Male', '2001-08-08', 'BANTAYAN', 'SUBA');
+INSERT INTO `Aquintance_Party` (`ID`, `Name`, `Status`, `Sex`, `Course`, `Year`, `Section`) VALUES
+(1, 'Batuhan, Junmar', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(2, 'Benignos, Erico', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(3, 'Buhayan, Jade Nelson', 'Not paid', 'Male', 'BSIT', '3rd', 'South'),
+(4, 'Destriza, Mathew David', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(5, 'Escala, John Mark', 'Not paid', 'Male', 'BSIT', '3rd', 'South'),
+(6, 'Gilbuena, Arjey', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(7, 'Lawan, Andreo', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(8, 'Lorca, Raymond', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(9, 'Paghubasan, Lorenzo', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(10, 'Pastorpide, Jomarie', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(11, 'Santillan, Jessie', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(12, 'Ziga, Clint Angelo', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(13, 'Umbao, Brex', 'Paid', 'Male', 'BSIT', '3rd', 'South'),
+(14, 'Alarcon, Paula', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(15, 'Capuras, Irene', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(16, 'Castro, Genibie', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(17, 'Compania, Joana', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(18, 'Cueva Ma. Jennefer', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(19, 'Desabille, Ritchel', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(20, 'Doble, Juvy Rose', 'Not paid', 'Female', 'BSIT', '3rd', 'South'),
+(21, 'Ducay, Gina', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(22, 'Ilustrisimo, Jessica', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(23, 'Mansueto, Javy May', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(24, 'Manzanares, Maria Mae', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(25, 'Negrido,  Gwendolyn', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(26, 'Poster,  Roselyn', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(27, 'Salinas,  Jessel', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(28, 'Tayo,  Mary Viagusty', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(29, 'Teano,  Sharra Mae', 'Paid', 'Female', 'BSIT', '3rd', 'South'),
+(30, 'Villadolid,  Aira May', 'Paid', 'Female', 'BSIT', '3rd', 'South');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customer`
+-- Table structure for table `Info`
 --
 
-CREATE TABLE `customer` (
-  `customer_id` decimal(5,0) NOT NULL DEFAULT 0,
-  `cust_name` varchar(30) NOT NULL DEFAULT '',
-  `city` varchar(15) NOT NULL DEFAULT '',
-  `grade` decimal(3,0) NOT NULL DEFAULT 0,
-  `salesman_id` decimal(5,0) NOT NULL DEFAULT 0
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE `Info` (
+  `Info_id` int(11) NOT NULL DEFAULT 0,
+  `Lastname` varchar(50) NOT NULL DEFAULT '',
+  `Firstname` varchar(50) NOT NULL DEFAULT '',
+  `Middlename` varchar(50) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Info`
+--
+
+INSERT INTO `Info` (`Info_id`, `Lastname`, `Firstname`, `Middlename`) VALUES
+(1, 'Agsu', 'Balakin', 'Astara'),
+(0, '', '', ''),
+(0, 'Kampot', 'Siemp', 'Udar'),
+(0, '', '', ''),
+(0, 'Kampot', 'Siemp', 'Udar');
 
 -- --------------------------------------------------------
 
@@ -109,7 +120,6 @@ CREATE TABLE `IT` (
 
 INSERT INTO `IT` (`SEQ_NO`, `ID_NUMBER`, `LASTNAME`, `FIRSTNAME`, `MIDDLENAME`, `COURSE`, `YEAR`, `GENDER`) VALUES
 (1, '2020-0665', 'BATUHAN', 'JUNMAR', 'APAWAN', 'BSIT', '3rd', 'MALE'),
-(2, '2020-0647', 'BENIGNOS', 'ERICO', 'FLORES', 'BSIT', '3rd', 'MALE'),
 (3, '2020-0728', 'BUHAYAN', 'JADE NELSON', 'NEGRE', 'BSIT', '3rd', 'MALE'),
 (4, '2020-0724', 'DESTRIZA', 'MATHEW DAVID', 'LAYOS', 'BSIT', '3rd', 'MALE'),
 (5, '2019-0685', 'DESUCATAN', 'MYNIEL', 'MOSNE', 'BSIT', '4th', 'MALE'),
@@ -146,95 +156,61 @@ INSERT INTO `IT` (`SEQ_NO`, `ID_NUMBER`, `LASTNAME`, `FIRSTNAME`, `MIDDLENAME`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
---
-
-CREATE TABLE `orders` (
-  `ord_no` decimal(5,0) NOT NULL DEFAULT 0,
-  `purch_amt` decimal(8,2) NOT NULL DEFAULT 0.00,
-  `ord_date` date NOT NULL DEFAULT '0000-00-00',
-  `customer_id` decimal(5,0) NOT NULL DEFAULT 0,
-  `salesman_id` decimal(5,0) NOT NULL DEFAULT 0
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `salesman`
---
-
-CREATE TABLE `salesman` (
-  `saleman_id` decimal(10,2) NOT NULL DEFAULT 0.00,
-  `name` varchar(30) NOT NULL DEFAULT '',
-  `city` varchar(15) NOT NULL DEFAULT '',
-  `commission` decimal(5,2) NOT NULL DEFAULT 0.00
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `user_info`
 --
 
 CREATE TABLE `user_info` (
-  `ui_id` int(11) NOT NULL DEFAULT 0,
-  `lastname` varchar(20) NOT NULL DEFAULT '',
-  `firstname` varchar(20) NOT NULL DEFAULT '',
-  `middlename` varchar(20) NOT NULL DEFAULT '',
-  `age` int(11) NOT NULL DEFAULT 0,
-  `sex` varchar(2) NOT NULL DEFAULT '',
-  `address` varchar(40) NOT NULL DEFAULT '',
-  `contact_no` varchar(20) NOT NULL DEFAULT '',
-  `birthdate` date NOT NULL DEFAULT '0000-00-00'
+  `user_id` int(11) NOT NULL DEFAULT 0,
+  `Name` varchar(50) NOT NULL DEFAULT '',
+  `Age` varchar(3) NOT NULL DEFAULT '',
+  `Sex` varchar(2) NOT NULL DEFAULT '',
+  `Email` varchar(50) NOT NULL DEFAULT '',
+  `Address` varchar(50) NOT NULL DEFAULT '',
+  `Phone_no` varchar(30) NOT NULL DEFAULT '',
+  `Course` varchar(20) NOT NULL DEFAULT '',
+  `Major` varchar(20) NOT NULL DEFAULT '',
+  `Country_code` varchar(5) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_info`
 --
 
-INSERT INTO `user_info` (`ui_id`, `lastname`, `firstname`, `middlename`, `age`, `sex`, `address`, `contact_no`, `birthdate`) VALUES
-(101, 'Buhayan', 'Jade Nelson', 'Negre', 21, 'M', 'Tarong, Madreidejos, Cebu', '+63 9052877252', '2001-08-08'),
-(102, 'Oronan', 'Glyza', 'Cena', 21, 'F', 'Bunakan, Madreidejos, Cebu', '+63 9455888451', '2001-09-22');
+INSERT INTO `user_info` (`user_id`, `Name`, `Age`, `Sex`, `Email`, `Address`, `Phone_no`, `Course`, `Major`, `Country_code`) VALUES
+(1, 'Ruby', '21', 'F', 'ruby123@yahoo.com', 'San Francisco', '+93 403262771', 'IT', 'Database', 'AF'),
+(2, 'Jilly', '26', 'F', 'jillycuts@yahoo.com', 'Balish', '+355 21309234', 'ICT', 'Php', 'AL'),
+(3, 'Manuel', '24', 'M', 'manuels26@gmail.com', 'Balish', '+213 432671', 'ICT', 'Server', 'DZ'),
+(4, 'Jhanly', '21', 'M', 'jhanly00@gmail.com', 'Kandahar', '+93 602811', 'ICT', 'Database', 'AF'),
+(5, 'Kaye Ann', '23', 'F', 'kayeann11@gmail.com', 'Davao', '+63 905283', 'IT', 'Database', 'PH'),
+(6, 'Brex', '21', 'M', 'brexx@gmail.com', 'Davao', '+63 905283', 'IT', 'Database', 'PH'),
+(7, 'Jeff', '19', 'M', 'jeffleck@gmail.com', 'Formosa', '+54 38334401', 'IT', 'Kali Linux', 'AR'),
+(8, 'Carl', '20', 'M', 'carls302@gmail.com', 'Diest', '+32 829302135', 'IT', 'Web Development', 'BE'),
+(9, 'Arlon', '29', 'M', 'arloncsty@gmail.com', 'Wareme', '+32 190992821', 'IT', 'Cyber Security', 'BE'),
+(10, 'Ana', '19', 'F', 'anacgsqlake@yahoo.com', 'Bauru', '+55 77632918', 'IT', 'MySQL', 'BR'),
+(11, 'Laravel', '25', 'F', 'levaral25@yahoo.com', 'Paphos', '+356 2324250139', 'ICT', 'Linux', 'CY'),
+(12, 'pilot', '21', 'M', 'pilot122@gmail.com', 'Cebu', '+63 983272882', 'IT', 'Database', 'PH');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `0rders`
+-- Indexes for table `Aquintance_Party`
 --
-ALTER TABLE `0rders`
-  ADD PRIMARY KEY (`ord_no`);
+ALTER TABLE `Aquintance_Party`
+  ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `BSIT3S`
+-- Indexes for table `IT`
 --
-ALTER TABLE `BSIT3S`
+ALTER TABLE `IT`
   ADD PRIMARY KEY (`SEQ_NO`,`ID_NUMBER`);
-
---
--- Indexes for table `customer`
---
-ALTER TABLE `customer`
-  ADD PRIMARY KEY (`customer_id`);
-
---
--- Indexes for table `orders`
---
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`ord_no`);
-
---
--- Indexes for table `salesman`
---
-ALTER TABLE `salesman`
-  ADD PRIMARY KEY (`saleman_id`);
 
 --
 -- Indexes for table `user_info`
 --
 ALTER TABLE `user_info`
-  ADD PRIMARY KEY (`ui_id`);
+  ADD PRIMARY KEY (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
