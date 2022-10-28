@@ -7,44 +7,44 @@ echo "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶�
 
 echo " " 
 echo " " 
-pkg install update -y      #installation.....
+pkg install update -y
 
 echo " "
 echo " " 
-pkg install ruby -y      #installation.....
+pkg install ruby -y
 echo " "
 
 echo " "
 echo " " 
-gem install lolcat -y      #installation.....
+gem install lolcat
 echo ""
-
+echo " " 
 echo " "
 echo " " 
-echo " installing mariadb " | lolcat
-pkg install mariadb -y      #installation.....
-
+echo " Installing mariadb...." | lolcat
+pkg install mariadb -y
 echo " " 
 echo " " 
-echo " installing pho " | lolcat
-pkg install php -y          #installation.....
-
+echo " " 
+echo " Installing php.... " | lolcat
+pkg install php -y
 echo " " 
 echo " " 
-echo " installing nodejs " | lolcat
-pkg install nodejs -y       #installation.....
-
-echo " "
 echo " " 
-echo " installing phpmyadmin " | lolcat
-pkg install phpmyadmin -y   #installation.....
-
+echo " Installing nodejs " | lolcat
+pkg install nodejs -y
+echo ""
+echo ""
+echo "" 
+echo " Installing phpmyadmin " | lolcat
+pkg install phpmyadmin -y
 echo ""
 echo ""
 echo ""
-echo " now it's done keep safe.. " | lolcat
 echo ""
-echo " enjoy creating database" | lolcat
+echo " Now it's done keep safe.. " | lolcat
+echo ""
+echo " Enjoy creating database" | lolcat
 
 echo ""
 exit
