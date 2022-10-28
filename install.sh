@@ -49,19 +49,21 @@ pkg install phpmyadmin -y
 echo ""
 echo ""
 echo ""
-echo "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶" 
-echo " Made by Jade Nelson Buhayan🥀🔥 "
-echo "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶"
+echo "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶" | lolcat
+echo " Made by Jade Nelson Buhayan🥀🔥 " | lolcat
+echo "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶" | lolcat
 echo ""
 echo ""
 echo " Now it's done keep safe💛.. " | lolcat
 echo ""
 echo " Enjoy creating database😍" | lolcat
 echo ""
-echo "you can start database by typing mysqld_safe -u root"
+echo "you can start database by typing mysqld_safe -u root" | lolcat
 echo ""
-echo "the open new session type mysql"
-echo "type SHOW DATABASES"
-echo "Now your turn.."
-
+echo "the open new session type mysql" | lolcat
+echo "type SHOW DATABASES" | lolcat
+echo "Now it's your turn.." | lolcat
+echo "do it on your own risks" | lolcat
+echo ""
+echo ""
 exit
