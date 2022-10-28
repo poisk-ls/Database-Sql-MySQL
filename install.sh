@@ -5,26 +5,23 @@ echo " Made this packages by poisk-ls🥀💛 "
 echo "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶"
 
 echo " " 
-
-#installation.....
-pkg install mariadb -y
+pkg install mariadb -y      #installation.....
 
 echo " " 
-
-#installation.....
-pkg install php -y
+pkg install php -y          #installation.....
 
 echo " " 
-#installation.....
-pkg install nodejs -y
+pkg install nodejs -y       #installation.....
 
 echo " "
-#installation.....
-pkg install phpmyadmin -y
+pkg install phpmyadmin -y   #installation.....
 
-echo ".."
-echo ".."
+echo ""
+echo ""
+echo ""
 echo " now it's done keep safe.. " 
+echo ""
 echo " enjoy creating database"
 
+echo ""
 exit
