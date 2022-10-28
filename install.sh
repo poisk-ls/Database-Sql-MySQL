@@ -57,6 +57,11 @@ echo ""
 echo " Now it's done keep safe💛.. " | lolcat
 echo ""
 echo " Enjoy creating database😍" | lolcat
-
 echo ""
+echo "you can start database by typing mysqld_safe -u root"
+echo ""
+echo "the open new session type mysql"
+echo "type SHOW DATABASES"
+echo "Now your turn.."
+
 exit
