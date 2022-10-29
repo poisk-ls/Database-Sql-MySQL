@@ -15,13 +15,13 @@ echo " "
 echo " "
 echo ""
 echo ""
-echo "Installing ruby...."
+echo " Installing ruby...."
 pkg install ruby -y
 echo " "
 echo " "
 echo " "
 echo " "
-echo "Installing lolcat...."
+echo " Installing lolcat...."
 gem install lolcat
 echo ""
 echo ""
@@ -69,11 +69,11 @@ echo ""
 echo ""
 echo "      - Enjoy creating database😍" | lolcat
 echo ""
-echo "      - You can start database by typing mysqld_safe -u root" | lolcat
+echo "      - You can start database by typing (mysqld_safe -u root)" | lolcat
 echo ""
-echo "      - On your terminal slide left, open new session type mysql" | lolcat
+echo "      - On your terminal slide left, open new session type (mysql)" | lolcat
 echo ""
-echo "      - type SHOW DATABASES;" | lolcat
+echo "      - type (SHOW DATABASES;)" | lolcat
 echo ""
 echo "      - Now it's your turn.." | lolcat
 echo ""
