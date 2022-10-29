@@ -1,4 +1,14 @@
 ### ![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2349F707&size=30&lines=☣️+Database-Sql-MySQL+☣️)
+##
+### Installation
+
+- git clone https://github.com/poisk-ls/Database-Sql-MySQL
+- cd Database-Sql-MySQL 
+- ls
+- chmod +x install.sh
+- ./install.sh
+
+##
 
 **My work in DB**
 ![alt
