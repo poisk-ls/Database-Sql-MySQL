@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-echo $red
+echo ""
 echo ""
 echo "⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶" 
 echo " Made this packages by poisk-ls🥀💛 "
@@ -56,13 +56,16 @@ echo ""
 echo ""
 echo ""
 echo ""
+echo ""
+echo "   done Installation..." | lolcat
+echo ""
+echo ""
 echo "       ⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶" | lolcat
-echo "         Made by Jade Nelson Buhayan🥀🔥 "   | lolcat
+echo "         Made by •Jade Nelson Buhayan•🥀🔥 "   | lolcat
 echo "       ⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶" | lolcat
 echo ""
 echo ""
 echo ""
-echo "      - Now it's done keep safe💛.. " | lolcat
 echo ""
 echo "      - Enjoy creating database😍" | lolcat
 echo ""
@@ -70,14 +73,14 @@ echo "      - You can start database by typing mysqld_safe -u root" | lolcat
 echo ""
 echo "      - On your terminal slide left, open new session type mysql" | lolcat
 echo ""
-echo "      - type SHOW DATABASES" | lolcat
+echo "      - type SHOW DATABASES;" | lolcat
 echo ""
 echo "      - Now it's your turn.." | lolcat
 echo ""
 echo "      - Do it on your own risks" | lolcat
 echo ""
+echo "      - keep safe💛.. " | lolcat
 echo ""
-echo "
-"
-#done
+echo " "
+
 exit
