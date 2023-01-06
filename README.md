@@ -48,7 +48,7 @@ text](https://github.com/poisk-ls/poisk-ls/blob/main/My%20Database%20Work/table7
 >
 ><a href="https://t.me/poisLs"><img src="https://img.shields.io/badge/telegram-poiskLs-blue.svg">
 >
-><a href="https://www.buymeacoffee.com/bsit3sbuhaY" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
+><a href="https://www.buymeacoffee.com/jadepoiskls" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" height= "60px" width= "217px" ></a>
 
 
 ####  ___________________________________
